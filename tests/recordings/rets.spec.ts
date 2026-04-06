@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test('rets', async ({ page }) => {
+test('TC-004 Test Senaryosu', async ({ page }) => {
   test.setTimeout(180000)
   page.setDefaultTimeout(10000)
   page.setDefaultNavigationTimeout(30000)

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test('abc testing', async ({ page }) => {
+test('TC-001 Test Senaryosu', async ({ page }) => {
   await page.goto('https://www.hesapkurdu.com/');
   await expect(page.getByRole('heading', { name: 'En Avantajlı Finansal Fırsatlar', exact: true }).nth(0)).toHaveText('En Avantajlı Finansal Fırsatlar');
   await page.getByRole('button', { name: 'Faizli Kredi' }).nth(0).click();

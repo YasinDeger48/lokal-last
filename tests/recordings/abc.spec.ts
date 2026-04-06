@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test('abc testing deneme', { tag: ['@smoke'] }, async ({ page }) => {
+test('TC-002 Test Senaryosu', { tag: ['@smoke'] }, async ({ page }) => {
   test.setTimeout(180000)
   page.setDefaultTimeout(10000)
   page.setDefaultNavigationTimeout(30000)
