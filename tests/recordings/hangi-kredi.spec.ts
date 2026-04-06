@@ -7,5 +7,5 @@ test('TC-010 Hangi Kredisi Senaryosu', async ({ page }) => {
 
   await page.goto('https://www.hangikredi.com/');
   await page.waitForLoadState('load', { timeout: 30000 })
-  await expect(page.getByText('Finansal ihtiyaçlarınız için en avantajlı çözümler', { exact: true })).toHaveText('Finansal ihtiyaçlarınız için en avantajlı çözümler');
+  await expect(page.locator("[data-testid='products-menu-component'] [data-testid='title']", { exact: true })).toHaveText('Finansal ihtiyaçlarınız için en avantajlı çözümler');
 })
