@@ -8,4 +8,5 @@ test('TC-002 Test Senaryosu', { tag: ['@smoke'] }, async ({ page }) => {
   await page.goto('https://www.hesapkurdu.com/');
   await page.waitForLoadState('load', { timeout: 30000 })
   await expect(page.getByText('En Avantajlı Finansal Fırsatlar', { exact: true })).toBeVisible();
+  
 })
