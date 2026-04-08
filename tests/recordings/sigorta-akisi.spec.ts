@@ -7,6 +7,7 @@ test('TC-005 Test Senaryosu', async ({ page }) => {
   await expect(page.locator('[href="https://www.koalay.com/"]').nth(0)).toBeVisible();
 })
 
+
 test('TC-006 Test Senaryosu', async ({ page }) => {
   await page.goto('https://example.com')
   await expect(page).toHaveTitle(/Example/)
