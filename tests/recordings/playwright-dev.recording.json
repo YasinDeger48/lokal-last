@@ -1,0 +1,437 @@
+{
+  "version": 1,
+  "spec": "playwright-dev.spec.ts",
+  "tests": {
+    "playwright": {
+      "recordedAt": "2026-11-03T22:47:33.548Z",
+      "baseURL": null,
+      "steps": [
+        {
+          "id": "step-1793746041360-j23py3",
+          "title": "Navigate",
+          "code": "await page.goto('https://playwright.dev/');",
+          "category": "navigation",
+          "pageAlias": "page",
+          "detail": "https://playwright.dev/",
+          "fingerprint": null
+        },
+        {
+          "id": "step-1793746043513-ukqwvj",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'Docs' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "Docs",
+            "attributes": {
+              "href": "/docs/intro"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'Docs' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('Docs', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746045176-2kz8nb",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'MCP' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "MCP",
+            "attributes": {
+              "href": "/mcp/introduction"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'MCP' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('MCP', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746045825-r8b1is",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'CLI', exact: true }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "CLI",
+            "attributes": {
+              "href": "/agent-cli/introduction"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'CLI', exact: true })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('CLI', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746046461-dcifqu",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'API' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "API",
+            "attributes": {
+              "href": "/docs/api/class-playwright"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'API' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('API', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746047558-gtzxir",
+          "title": "Click",
+          "code": "await page.getByLabel('Skip to main content', { exact: true }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "div",
+            "text": "Skip to main content",
+            "attributes": {
+              "role": "region",
+              "aria-label": "Skip to main content"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByLabel('Skip to main content', { exact: true })",
+                "kind": "label",
+                "score": 85,
+                "unique": true
+              },
+              {
+                "locator": "getByRole('link', { name: 'Playwright Test' }).first()",
+                "kind": "role",
+                "score": 45,
+                "unique": true
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "assert-1793746052192-dxeapn",
+          "title": "Assert text",
+          "code": "await expect(page.getByRole('heading', { name: 'Playwright Test' })).toHaveText('Playwright Test');",
+          "category": "assertion",
+          "pageAlias": "page",
+          "detail": "Playwright Test",
+          "fingerprint": {
+            "tag": "h1",
+            "text": "Playwright Test",
+            "attributes": {},
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('heading', { name: 'Playwright Test' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('Playwright Test', { exact: true })",
+                "kind": "text",
+                "score": 0,
+                "unique": false
+              }
+            ],
+            "source": "live"
+          }
+        }
+      ]
+    },
+    "abc": {
+      "recordedAt": "2026-11-03T22:50:06.914Z",
+      "baseURL": null,
+      "steps": [
+        {
+          "id": "step-1793746179828-t3xtm8",
+          "title": "Navigate",
+          "code": "await page.goto('https://playwright.dev/');",
+          "category": "navigation",
+          "pageAlias": "page",
+          "detail": "https://playwright.dev/",
+          "fingerprint": null
+        },
+        {
+          "id": "step-1793746182438-2va37t",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'Docs' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "Docs",
+            "attributes": {
+              "href": "/docs/intro"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'Docs' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('Docs', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746183787-3oj7h2",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'MCP' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "MCP",
+            "attributes": {
+              "href": "/mcp/introduction"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'MCP' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('MCP', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746185102-9wqyw1",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'CLI', exact: true }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "CLI",
+            "attributes": {
+              "href": "/agent-cli/introduction"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'CLI', exact: true })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('CLI', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746186271-dfdbs3",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'API' }).click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "API",
+            "attributes": {
+              "href": "/docs/api/class-playwright"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'API' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('API', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746195814-i73bcs",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'Playwright Test' }).first().click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "a",
+            "text": "Playwright Test",
+            "attributes": {
+              "href": "/docs/api/class-test"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'Playwright Test' }).first()",
+                "kind": "role",
+                "score": 45,
+                "unique": true
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "step-1793746196577-j96sjb",
+          "title": "Click",
+          "code": "await page.getByRole('link', { name: 'Playwright Test' }).first().click();",
+          "category": "action",
+          "pageAlias": "page",
+          "detail": null,
+          "fingerprint": {
+            "tag": "span",
+            "text": "Playwright Test",
+            "attributes": {
+              "title": "Playwright Test"
+            },
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('link', { name: 'Playwright Test' }).first()",
+                "kind": "role",
+                "score": 45,
+                "unique": true
+              },
+              {
+                "locator": "getByText('Playwright Test', { exact: true })",
+                "kind": "text",
+                "score": 45,
+                "unique": null
+              },
+              {
+                "locator": "getByTitle('Playwright Test', { exact: true })",
+                "kind": "title",
+                "score": 0,
+                "unique": false
+              }
+            ],
+            "source": "action"
+          }
+        },
+        {
+          "id": "assert-1793746205210-2zb7wd",
+          "title": "Assert text",
+          "code": "await expect(page.getByRole('heading', { name: 'Playwright Test' })).toHaveText('Playwright Test');",
+          "category": "assertion",
+          "pageAlias": "page",
+          "detail": "Playwright Test",
+          "fingerprint": {
+            "tag": "h1",
+            "text": "Playwright Test",
+            "attributes": {},
+            "context": {},
+            "locators": [
+              {
+                "locator": "getByRole('heading', { name: 'Playwright Test' })",
+                "kind": "role",
+                "score": 80,
+                "unique": true
+              },
+              {
+                "locator": "getByText('Playwright Test', { exact: true })",
+                "kind": "text",
+                "score": 0,
+                "unique": false
+              }
+            ],
+            "source": "live"
+          }
+        }
+      ]
+    }
+  },
+  "specHash": "565c067055752db90ddd1019279628a6818d42c69c621087b42caf2c1ecf9b63"
+}
